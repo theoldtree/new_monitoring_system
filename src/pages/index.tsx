@@ -1,5 +1,6 @@
 import { TbHeartRateMonitor } from "react-icons/tb";
 import Link from "next/link";
+import { InputForm } from "@/components/inputform";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex-1 border-solid border-2 border-black flex justify-center items-center h-screen">
-        Hello World!!
+        <InputForm label="관리자" label2="ID" label3="PW" btnText="로그인" />
       </section>
     </div>
   );
