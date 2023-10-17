@@ -1,6 +1,9 @@
 import { Chart } from "./chart";
+import { Table } from "./table";
 
 export default function DashBoard() {
+  const exampleData = { key: "value" };
+  // TODO : 각각의 시계열 데이터를 받아 chart props 에 전달
   return (
     <div className="flex flex-col h-screen">
       <div className="flex-1 flex border-2 border-black">
@@ -8,7 +11,9 @@ export default function DashBoard() {
         <Chart label="온도" data={{ data: "온도" }} />
         <Chart label="습도" data={{ data: "습도" }} />
       </div>
-      <div className="flex-1 border-2 border-black">hello</div>
+      <div className="flex-1 border-2 border-black">
+        <Table label="Data Table" data={exampleData} />
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ interface ChartProps {
 }
 
 export const Chart: React.FC<ChartProps> = ({ label, data }) => {
+  // TODO : data를 받아 Chart 그래프 완성
   return (
     <div className="flex-1 border-2 border-black items-center justify-center pt-2">
       <label className="m-4 text-center">{label}</label>
