@@ -1,5 +1,6 @@
+import AlarmTab from "@/components/\balarmtab";
 import Icon from "@/components/icon";
-import { Divider } from "@nextui-org/react";
+import ManagerTab from "@/components/managertab";
 import Link from "next/link";
 import { useState } from "react";
 import { IoLogOutOutline } from "react-icons/io5";
@@ -29,7 +30,9 @@ export default function Manager() {
         <Icon name={"AiOutlineTeam"} onclick={changeModeToManager} />
         <Icon name={"PiBellRingingLight"} onclick={changeModeToAlarm} />
       </div>
-      <div style={{ width: "15%" }} className="border-2 border-black"></div>
+      <div style={{ width: "15%" }} className="border-2 border-black">
+        {mode === "manager" ? <ManagerTab /> : <AlarmTab />}
+      </div>
       <div style={{ width: "80%" }} className="border-2 border-black"></div>
     </div>
   );
