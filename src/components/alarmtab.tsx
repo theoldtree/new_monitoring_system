@@ -4,6 +4,9 @@ import { ManagerInputForm } from "./inputformManager";
 import Icon from "./icon";
 
 export default function AlarmTab() {
+  // TODO : alarm table에서 경고 목록 data 받아 props로 넘기기
+  // TODO : 각각의 알람 버튼에 대해서 api 추가
+  // TODO : Threshold 버튼에 대해 기능 추가
   const exampleData = { key: "value" };
   return (
     <div>

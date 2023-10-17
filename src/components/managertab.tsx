@@ -2,6 +2,9 @@ import { Button, Divider } from "@nextui-org/react";
 import { ManagerInputForm } from "./inputformManager";
 import ManagerBox from "./mangerbox";
 export default function ManagerTab() {
+  // TODO : manager data 불러와 list에서 보여주기
+  // TODO : manager 제거 버튼 기능 추가
+  // TODO : manager 추가 기능 추가
   return (
     <div>
       <div className="pt-2">
