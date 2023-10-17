@@ -1,10 +1,21 @@
-import { Divider } from "@nextui-org/react";
+import { Button, Divider } from "@nextui-org/react";
 import { ManagerInputForm } from "./inputformManager";
+import ManagerBox from "./mangerbox";
 export default function ManagerTab() {
   return (
     <div>
-      <div></div>
-      <Divider />
+      <div className="pt-2">
+        <label className="m-2 ">관리인 목록</label>
+        <ManagerBox name={"유정무"} id={0} />
+        <ManagerBox name={"한현승"} id={1} />
+        <ManagerBox name={"최진서"} id={1} />
+        <div className="flex justify-end">
+          <Button className="mr-3 border-sky-700 border-solid border-2 rounded-md p-1">
+            제거
+          </Button>
+        </div>
+      </div>
+      <Divider className="m-3" />
       <div>
         <ManagerInputForm
           label="계정추가"
