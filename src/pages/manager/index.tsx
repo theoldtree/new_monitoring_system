@@ -1,4 +1,5 @@
 import AlarmTab from "@/components/\balarmtab";
+import DashBoard from "@/components/dashboard";
 import Icon from "@/components/icon";
 import ManagerTab from "@/components/managertab";
 import Link from "next/link";
@@ -33,7 +34,9 @@ export default function Manager() {
       <div style={{ width: "15%" }} className="border-2 border-black">
         {mode === "manager" ? <ManagerTab /> : <AlarmTab />}
       </div>
-      <div style={{ width: "80%" }} className="border-2 border-black"></div>
+      <div style={{ width: "80%" }} className="border-2 border-black">
+        <DashBoard />
+      </div>
     </div>
   );
 }
