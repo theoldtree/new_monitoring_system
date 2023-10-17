@@ -3,7 +3,8 @@ import { Table } from "./table";
 
 export default function DashBoard() {
   const exampleData = { key: "value" };
-  // TODO : 각각의 시계열 데이터를 받아 chart props 에 전달
+  // TODO : 각각의 시계열 데이터를 받아 chart data props 에 전달
+  // TODO : Sensor Data 및 Threshold Data 를 Join하여 table data props에 전달
   return (
     <div className="flex flex-col h-screen">
       <div className="flex-1 flex border-2 border-black">

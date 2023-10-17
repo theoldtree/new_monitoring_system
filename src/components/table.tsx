@@ -4,6 +4,7 @@ interface TableProps {
 }
 
 export const Table: React.FC<TableProps> = ({ data, label }) => {
+  //TODO : 받은 data를 바탕으로 Table 완성
   return (
     <div className="flex-1 border-2 border-black items-center justify-center pt-2 h-full">
       <label className="m-4 text-center">{label}</label>
